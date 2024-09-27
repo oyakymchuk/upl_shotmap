@@ -6,6 +6,7 @@ env:
   AUTOMATION_EMAIL: "automation@upl_shotmap.com"
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "49 0 * * *" 
 jobs:
