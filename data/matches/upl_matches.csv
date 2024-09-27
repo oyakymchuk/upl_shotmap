@@ -1,0 +1,57 @@
+id,away_team_name,home_team_name,home_team_id,away_team_id,date,tournament_name,tournament_id,season_name,season_year,season_id,home_scored,away_scored
+12632677,Chornomorets Odesa,FC Livyi Bereh Kyiv,388209,3310,2024-08-26,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484488,Veres Rivne,Kolos Kovalivka,200776,200773,2024-08-26,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12484498,Karpaty Lviv,LNZ Cherkasy,284427,3316,2024-08-26,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,1
+12484487,Zorya Luhansk,Obolon Kyiv,138564,5987,2024-08-30,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,2
+12484485,Inhulets Petrove,Rukh Lviv,229644,200123,2024-08-30,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,5,0
+12484482,Vorskla Poltava,Karpaty Lviv,3316,3309,2024-08-31,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12484489,Kolos Kovalivka,Oleksandria,25479,200776,2024-08-31,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,1
+12484481,Polissya Zhytomyr,Chornomorets Odesa,3310,258536,2024-08-31,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,4
+12632672,FC Livyi Bereh Kyiv,Veres Rivne,200773,388209,2024-09-01,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,3
+12484484,LNZ Cherkasy,Dynamo Kyiv,3305,284427,2024-09-01,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484479,Oleksandria,Obolon Kyiv,138564,25479,2024-09-13,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,0
+12484358,Inhulets Petrove,Chornomorets Odesa,3310,200123,2024-09-14,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484471,Dynamo Kyiv,Zorya Luhansk,5987,3305,2024-09-14,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,2
+12484478,Karpaty Lviv,Shakhtar Donetsk,3313,3316,2024-09-14,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,5,2
+12484473,Rukh Lviv,Vorskla Poltava,3309,229644,2024-09-15,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,0
+12632671,FC Kryvbas Kryvyi Rih,FC Livyi Bereh Kyiv,388209,294048,2024-09-15,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12484475,Veres Rivne,Polissya Zhytomyr,258536,200773,2024-09-15,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,1
+12484354,LNZ Cherkasy,Kolos Kovalivka,200776,284427,2024-09-16,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12736382,Vorskla Poltava,Dynamo Kyiv,3305,3309,2024-09-18,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,3,1
+12484464,Karpaty Lviv,Chornomorets Odesa,3310,3316,2024-09-21,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12632678,FC Livyi Bereh Kyiv,Oleksandria,25479,388209,2024-09-21,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,0
+12484472,Rukh Lviv,Dynamo Kyiv,3305,229644,2024-09-21,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,0
+12484348,Inhulets Petrove,Veres Rivne,200773,200123,2024-09-22,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,2
+12484468,Vorskla Poltava,FC Kryvbas Kryvyi Rih,294048,3309,2024-09-22,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12484466,LNZ Cherkasy,Polissya Zhytomyr,258536,284427,2024-09-22,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12484470,Zorya Luhansk,Kolos Kovalivka,200776,5987,2024-09-23,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484467,Obolon Kyiv,Shakhtar Donetsk,3313,138564,2024-09-23,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,4,0
+12484517,Karpaty Lviv,Veres Rivne,200773,3316,2024-08-03,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,0
+12484518,Chornomorets Odesa,FC Kryvbas Kryvyi Rih,294048,3310,2024-08-03,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12632670,FC Livyi Bereh Kyiv,LNZ Cherkasy,284427,388209,2024-08-04,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484511,Kolos Kovalivka,Obolon Kyiv,138564,200776,2024-08-04,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,2
+12484522,Shakhtar Donetsk,Vorskla Poltava,3309,3313,2024-08-04,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,5
+12484515,Inhulets Petrove,Zorya Luhansk,5987,200123,2024-08-04,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,1
+12632673,Vorskla Poltava,FC Livyi Bereh Kyiv,388209,3309,2024-08-09,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,3
+12632963,Dynamo Kyiv,Veres Rivne,200773,3305,2024-08-09,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,2
+12484510,Zorya Luhansk,Chornomorets Odesa,3310,5987,2024-08-10,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12484504,Inhulets Petrove,Kolos Kovalivka,200776,200123,2024-08-10,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,0
+12484513,Rukh Lviv,Obolon Kyiv,138564,229644,2024-08-11,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,4
+12484506,FC Kryvbas Kryvyi Rih,Karpaty Lviv,3316,294048,2024-08-11,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,3,0
+12484509,Polissya Zhytomyr,Shakhtar Donetsk,3313,258536,2024-08-11,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12484502,Oleksandria,LNZ Cherkasy,284427,25479,2024-08-12,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,2
+12484494,Kolos Kovalivka,Chornomorets Odesa,3310,200776,2024-08-16,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,0
+12484499,Obolon Kyiv,Vorskla Poltava,3309,138564,2024-08-16,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,2,0
+12484495,Oleksandria,Zorya Luhansk,5987,25479,2024-08-17,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,2
+12484497,Inhulets Petrove,Polissya Zhytomyr,258536,200123,2024-08-17,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12484503,Dynamo Kyiv,Karpaty Lviv,3316,3305,2024-08-17,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,3
+12484501,Rukh Lviv,LNZ Cherkasy,284427,229644,2024-08-18,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,3,1
+12484505,FC Kryvbas Kryvyi Rih,Veres Rivne,200773,294048,2024-08-18,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,2
+12632704,Shakhtar Donetsk,FC Livyi Bereh Kyiv,388209,3313,2024-08-18,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,0,1
+12484493,Shakhtar Donetsk,Oleksandria,25479,3313,2024-08-24,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,4,3
+12484486,Obolon Kyiv,Polissya Zhytomyr,258536,138564,2024-08-25,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,4,0
+12484496,Zorya Luhansk,Rukh Lviv,229644,5987,2024-08-25,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,3,0
+12484491,Inhulets Petrove,FC Kryvbas Kryvyi Rih,294048,200123,2024-08-25,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,1,1
+12599894,Metalist 1925,FC Livyi Bereh Kyiv,388209,266889,2024-07-26,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,6,5
+12599893,FC Minaj,FC Epicentr Dunaivtsi,323552,291318,2024-07-26,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,6,8
+12607076,FC Minaj,FC Livyi Bereh Kyiv,388209,291318,2024-07-30,Ukrainian Premier League,218,Premier League 24/25,24/25,62656,3,0
