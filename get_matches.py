@@ -1,9 +1,11 @@
 from config import *
-from matches_etl import extract_matches
+from matches_etl import extract_matches, transform_matches, load_matches
 
-matches_json = extract_matches(
+matches_list = extract_matches(
     unique_tournament=UPL_UNIQUE_TOURNAMENT_ID,
     season_id=UPL_SEASONS_ID['24/25']
 )
 
-print(matches_json)
+prepared_matches = transform_matches(matches_list=matches_list)
+
+load_matches(prepared_matches)
