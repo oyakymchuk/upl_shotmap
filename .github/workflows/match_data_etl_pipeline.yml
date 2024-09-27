@@ -1,0 +1,37 @@
+name: ETL Pipeline Match Data
+run-name: ETL Pipeline Match Data Run Daily
+env:
+  PYTHON_VERSION: "3.12"
+  AUTOMATION_USERNAME: "ETL Automation"
+  AUTOMATION_EMAIL: "automation@upl_shotmap.com"
+
+on:
+  schedule:
+    - cron: "49 0 * * *" 
+jobs:
+  run-etl-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.0
+      - name: Set up Python 
+        uses: actions/setup-python@v5.2.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: ETL Pipeline
+        run: |
+          python get_matches.py
+      - name: Peek Data output
+        run: |
+          head -n 10 data/matches/upl_matches.csv
+      - name: Commit report
+        run: |
+          git config --global user.name $AUTOMATION_USERNAME
+          git config --global user.email $AUTOMATION_EMAIL
+          git add data/matches/.
+          git commit -m "Updating Matches Data"
+          git push 
