@@ -105,6 +105,8 @@ def transform_matches(matches_list: list):
     df['home_scored'] = df['home_scored'].astype(int)
     df['away_scored'] = df['away_scored'].astype(int)
 
+    df = df.sort_values(['date'], ascending=False)
+
     logging.info('Data was successfully transformed to tabular format.')
 
     return df

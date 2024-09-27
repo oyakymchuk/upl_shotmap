@@ -26,8 +26,13 @@ jobs:
           python get_matches.py
       - name: Peek Data output
         run: |
-          tail -n 10 data/matches/upl_matches.csv
+          head -n 10 data/matches/upl_matches.csv
+      - name: Check if there are any changes in dataset
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit report
+        if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
