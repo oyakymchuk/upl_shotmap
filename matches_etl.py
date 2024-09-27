@@ -119,7 +119,7 @@ def load_matches(matches_df: pd.DataFrame):
     logging.info("----- Matches Data: Load step started -----")
 
     output_location = './data/matches'
-    output_filename = f'upl_matches_{date.today()}.csv'
+    output_filename = f'upl_matches.csv'
     output_path = output_location + '/' + output_filename
 
     if not os.path.exists(output_location):
