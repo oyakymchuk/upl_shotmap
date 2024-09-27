@@ -2,8 +2,6 @@ name: ETL Pipeline Match Data
 run-name: ETL Pipeline Match Data Run Daily
 env:
   PYTHON_VERSION: "3.12"
-  AUTOMATION_USERNAME: "ETL Automation"
-  AUTOMATION_EMAIL: "automation@upl_shotmap.com"
 
 on:
   schedule:
@@ -30,8 +28,8 @@ jobs:
           head -n 10 data/matches/upl_matches.csv
       - name: Commit report
         run: |
-          git config --global user.name $AUTOMATION_USERNAME
-          git config --global user.email $AUTOMATION_EMAIL
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add data/matches/.
           git commit -m "Updating Matches Data"
           git push 
