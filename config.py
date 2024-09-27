@@ -1,7 +1,7 @@
 SOFASCORE_API = "https://api.sofascore.com/api/v1/"
 
 # manually searched on SofaScore
-UPL_UNIQUE_TORNUMENT_ID = 218
+UPL_UNIQUE_TOURNAMENT_ID = 218
 
 # manually searched on SofaScore
 UPL_SEASONS_ID = {
