@@ -26,7 +26,7 @@ jobs:
           python get_matches.py
       - name: Peek Data output
         run: |
-          head -n 10 data/matches/upl_matches.csv
+          tail -n 10 data/matches/upl_matches.csv
       - name: Commit report
         run: |
           git config user.name github-actions
