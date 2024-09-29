@@ -56,6 +56,7 @@ def transform_matches(matches_list: list):
 
     logging.info("----- Matches Data: Transform step started -----")
 
+    pd.set_option("display.precision", 15)
     df = pd.json_normalize(matches_list)
 
     # extract only needed columns
@@ -71,8 +72,8 @@ def transform_matches(matches_list: list):
         'season.name',
         'season.year',
         'season.id',
-        'homeScore.normaltime',
-        'awayScore.normaltime',
+        'homeScore.current',
+        'awayScore.current',
         'status.type',
         'roundInfo.round',
         'roundInfo.cupRoundType'
@@ -92,8 +93,8 @@ def transform_matches(matches_list: list):
         'season.name': 'season_name',
         'season.year': 'season_year',
         'season.id': 'season_id',
-        'homeScore.normaltime': 'home_scored',
-        'awayScore.normaltime': 'away_scored',
+        'homeScore.current': 'home_scored',
+        'awayScore.current': 'away_scored',
         'status.type': 'status',
         'roundInfo.round': 'round',
         'roundInfo.cupRoundType': 'pre_season_cup'
@@ -112,7 +113,7 @@ def transform_matches(matches_list: list):
     df.loc[df['pre_season_cup'] > 0, ['pre_season_cup']] = 1
     df['pre_season_cup'] = df['pre_season_cup'].astype('Int64')
 
-    df = df.sort_values(['date'], ascending=True)
+    df = df.sort_values(['date', 'id'], ascending=True)   
 
     logging.info('Data was successfully transformed to tabular format.')
 
