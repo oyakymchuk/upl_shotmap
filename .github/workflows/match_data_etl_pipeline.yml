@@ -23,10 +23,10 @@ jobs:
           pip install -r requirements.txt
       - name: ETL Pipeline
         run: |
-          python get_matches.py
+          python tools/get_matches.py
       - name: Peek Data output
         run: |
-          head -n 10 data/matches/upl_matches.csv
+          tail -n 10 data/matches/upl_matches.csv
       - name: Check if there are any changes in dataset
         id: verify_diff
         run: |

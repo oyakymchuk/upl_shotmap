@@ -61,8 +61,8 @@ def transform_matches(matches_list: list):
     # extract only needed columns
     columns_extract = [
         'id',
-        'awayTeam.name',
         'homeTeam.name',
+        'awayTeam.name',
         'homeTeam.id',
         'awayTeam.id',
         'startTimestamp',
@@ -71,9 +71,11 @@ def transform_matches(matches_list: list):
         'season.name',
         'season.year',
         'season.id',
-        'homeScore.current',
-        'awayScore.current',
-        'status.type'
+        'homeScore.normaltime',
+        'awayScore.normaltime',
+        'status.type',
+        'roundInfo.round',
+        'roundInfo.cupRoundType'
     ]
     df = df.loc[:, columns_extract]
 
@@ -90,9 +92,11 @@ def transform_matches(matches_list: list):
         'season.name': 'season_name',
         'season.year': 'season_year',
         'season.id': 'season_id',
-        'homeScore.current': 'home_scored',
-        'awayScore.current': 'away_scored',
-        'status.type': 'status'
+        'homeScore.normaltime': 'home_scored',
+        'awayScore.normaltime': 'away_scored',
+        'status.type': 'status',
+        'roundInfo.round': 'round',
+        'roundInfo.cupRoundType': 'pre_season_cup'
     }
     df = df.rename(columns_rename_map, axis=1)
 
@@ -100,12 +104,15 @@ def transform_matches(matches_list: list):
     df = df.loc[df['status'] == 'finished', :]
     df = df.drop(['status'], axis=1)
 
-    # convert timestamp to datetime and extract only date
+    # trasformations
     df['date'] = pd.to_datetime(df['date'], unit='s').dt.date
-    df['home_scored'] = df['home_scored'].astype(int)
-    df['away_scored'] = df['away_scored'].astype(int)
+    df['home_scored'] = df['home_scored'].astype('Int64')
+    df['away_scored'] = df['away_scored'].astype('Int64')
+    df['pre_season_cup'] = df['pre_season_cup'].fillna(0)
+    df.loc[df['pre_season_cup'] > 0, ['pre_season_cup']] = 1
+    df['pre_season_cup'] = df['pre_season_cup'].astype('Int64')
 
-    df = df.sort_values(['date'], ascending=False)
+    df = df.sort_values(['date'], ascending=True)
 
     logging.info('Data was successfully transformed to tabular format.')
 
